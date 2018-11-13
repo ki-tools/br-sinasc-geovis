@@ -1,0 +1,135 @@
+__geovis_config__({
+  "name": "Brazil SINASC Explorer",
+  "countries": [
+    "BRA"
+  ],
+  "defaultViewMode": {
+    "mode": "geo",
+    "level": "country",
+    "code": {
+      "country": "BRA",
+      "state": ""
+    }
+  },
+  "defaultXVar": "year",
+  "defaultYVar": "brthwt_g",
+  "defaultIndex": 4,
+  "mapStyle": "mapbox://styles/rhafen/cjlqs6rq47uen2speg0aasu3a",
+  "states": {
+    "BRA": ["BRA-612", "BRA-670", "BRA-594", "BRA-576", "BRA-681", "BRA-600", "BRA-613", "BRA-614", "BRA-592", "BRA-595", "BRA-602", "BRA-593", "BRA-622", "BRA-621", "BRA-628", "BRA-626", "BRA-1313", "BRA-623", "BRA-629", "BRA-624", "BRA-625", "BRA-627", "BRA-1311", "BRA-1294", "BRA-599", "BRA-601", "BRA-596"]
+  },
+  "seqLen": 5,
+  "years": [2011, 2012, 2013, 2014, 2015],
+  "variables": {
+    "n_births_log10": {
+      "name": "Log base 10 number of births",
+      "breaks": [1, 2, 3, 4, 5, 6],
+      "range": [1.4914, 5.7912]
+    },
+    "brthwt_g": {
+      "name": "Mean birthweight (g)",
+      "breaks": [3000, 3050, 3100, 3150, 3200, 3250, 3300, 3350, 3400, 3450],
+      "range": [3026.5952, 3416.3313]
+    },
+    "brthwt_z": {
+      "name": "Mean birthweight for GA z-score",
+      "breaks": [-0.5, 0, 0.5, 1, 1.5, 2, 2.5],
+      "range": [-0.0864, 2.4007]
+    },
+    "brthwt_z2": {
+      "name": "Mean birthweight for GA z-score (based on LMP)",
+      "breaks": [-0.4, -0.2, 0, 0.2, 0.4, 0.6, 0.8],
+      "range": [-0.3794, 0.6907]
+    },
+    "sga_pct": {
+      "name": "% of children SGA",
+      "breaks": [0, 5, 10, 15, 20],
+      "range": [0, 19.2053]
+    },
+    "lga_pct": {
+      "name": "% of children LGA",
+      "breaks": [0, 5, 10, 15, 20, 25, 30, 35],
+      "range": [0, 33.1058]
+    },
+    "sga_pct2": {
+      "name": "% of children born at <32 weeks",
+      "breaks": [0, 5, 10, 15, 20, 25],
+      "range": [0, 23.6842]
+    },
+    "lga_pct2": {
+      "name": "% of children SGA (based on LMP)",
+      "breaks": [0, 5, 10, 15, 20, 25, 30, 35],
+      "range": [0, 31.5603]
+    },
+    "preterm_pct": {
+      "name": "% of children LGA (based on LMP)",
+      "breaks": [0, 1, 2, 3, 4, 5, 6, 7],
+      "range": [0, 6.3492]
+    },
+    "preterm_pct2": {
+      "name": "% of children born at <32 weeks (based on LMP)",
+      "breaks": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "range": [0, 7.5]
+    },
+    "ces_prelabor_pct": {
+      "name": "% of cesarean births initiated before labor",
+      "breaks": [0, 20, 40, 60, 80, 100],
+      "range": [0, 93.6364]
+    },
+    "ces_pct": {
+      "name": "% of cesarean births",
+      "breaks": [0, 20, 40, 60, 80, 100],
+      "range": [2.5641, 91.0714]
+    },
+    "educ12_pct": {
+      "name": "% of mothers with 12 or more years education",
+      "breaks": [0, 5, 10, 15, 20, 25, 30, 35],
+      "range": [0, 30.929]
+    },
+    "induced_pct": {
+      "name": "% of induced births",
+      "breaks": [0, 10, 20, 30, 40, 50, 60],
+      "range": [0, 57.4766]
+    },
+    "teen_pct": {
+      "name": "% of teenager mothers",
+      "breaks": [0, 5, 10, 15, 20, 25, 30, 35, 40],
+      "range": [0, 38.2114]
+    },
+    "race_white_pct": {
+      "name": "% of white mothers",
+      "breaks": [0, 20, 40, 60, 80, 100],
+      "range": [0, 99.8536]
+    },
+    "single_mom_pct": {
+      "name": "% of single mothers",
+      "breaks": [0, 10, 20, 30, 40, 50, 60, 70, 80],
+      "range": [2, 78.3333]
+    },
+    "visits7_pct": {
+      "name": "% of mothers with 7 or more prenatal visits",
+      "breaks": [0, 20, 40, 60, 80, 100],
+      "range": [1.0672, 93.4783]
+    },
+    "n_prev_preg": {
+      "name": "Mean number of previous pregnancies",
+      "breaks": [0, 0.5, 1, 1.5, 2, 2.5, 3],
+      "range": [0, 2.578]
+    },
+    "apgar1": {
+      "name": "Mean apgar1 score",
+      "breaks": [4, 5, 6, 7, 8, 9, 10],
+      "range": [4.8974, 9.1028]
+    },
+    "gest_month_precare": {
+      "name": "Mean gestational month of first prenatal visit",
+      "breaks": [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5],
+      "range": [1, 4.0894]
+    },
+    "year": {
+      "name": "year",
+      "breaks": [2011, 2012, 2013, 2014, 2015],
+      "range": [2011, 2015]
+    }
+  }
+})
